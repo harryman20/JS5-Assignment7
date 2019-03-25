@@ -15,6 +15,10 @@ import {MatInputModule} from'@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatDialogModule} from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
+import { CreateContentComponent } from './create-content/create-content.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     DefaultTypePipe,
     TextDecorationDirective,
     LineThroughDirective,
-    MessagesComponent
+    MessagesComponent,
+    CreateContentComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,10 @@ import {MatDialogModule} from '@angular/material/dialog';
       MatInputModule,
       MatCardModule,
       MatProgressSpinnerModule,
-      MatDialogModule
+      MatDialogModule,
+      HttpClientModule,
+      HttpClientInMemoryWebApiModule.forRoot(
+          InMemoryDataService, { dataEncapsulation: false })
   ],
   providers: [],
   bootstrap: [AppComponent]

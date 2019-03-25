@@ -1,5 +1,5 @@
 <input matInput [(ngModel)]="typeCheck"> <button mat-stroked-button color="primary" (click)="clickEvent()">Click me to display all number of types!</button>
-<
+
 <p>
   <app-content-card *ngFor="let item of (content1 | defaultType:'news') ; index as i; last as e" [stuff]="item" [index]="i" [last]="e" [type]="'news'"></app-content-card>
   <app-content-card *ngFor="let item of (content1 | defaultType:'story') ; index as i; last as e" [stuff]="item" [index]="i" [last]="e" [type]="'story'"></app-content-card>

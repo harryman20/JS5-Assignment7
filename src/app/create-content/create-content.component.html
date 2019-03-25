@@ -1,0 +1,11 @@
+<div>
+  <label>Content:
+    <input #title />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(title.value); title.value=''">
+    add
+  </button>
+
+  <button (click)="save()">save</button>
+</div>
