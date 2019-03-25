@@ -1,0 +1,40 @@
+h2 {
+    background-color: crimson;
+    font-size: 30px;
+    color: azure;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div.messages {
+    border-style: solid;
+    border-width: 4px;
+    border-color: aqua;
+    background-color: darkolivegreen;
+    margin-bottom: 30px;
+}
+
+div.message {
+    text-align: center;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+div.clear-butown {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.clear {
+    background-color: darkblue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
